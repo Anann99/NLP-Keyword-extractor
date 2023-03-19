@@ -4,18 +4,23 @@ This is a Streamlit app for extracting keywords from a web page and evaluating t
 
 ## Installation
 
-To run this app, you need to have Python 3 installed on your system. You also need to install the following dependencies:
+To run this app, you need to have Python 3 installed on your system. You can install the dependencies using pip and the given requirements.txt file.
 
+```bash
+pip install -r requirements.txt
+```
+Alternatively, you also need to install the following dependencies:
 - requests
 - beautifulsoup4
 - keybert
 - pandas
 - streamlit
+- keyphrase-vectorizers
 
 You can install these dependencies using pip:
 
 ```bash
-pip install requests beautifulsoup4 keybert pandas streamlit
+pip install requests beautifulsoup4 keybert pandas streamlit keyphrase-vectorizers
 ```
 
 ## Usage
@@ -30,10 +35,11 @@ This will launch the app in your default web browser. Enter the URL of the web p
 
 ## Files
 
-- `keyword_model.py`: Python file containing the keyword extraction model code.
+- `keywordmodel.py`: Python file containing the keyword extraction model code.
 - `app.py`: Python file containing the Streamlit app code.
 - `eval_dataset.csv`: Sample evaluation CSV file.
 - `README.md`: This file.
+- `requirements.txt`: Contains the dependancies that need to be installed on the system
 
 ## Credits
 
